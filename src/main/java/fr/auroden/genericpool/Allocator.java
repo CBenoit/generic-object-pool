@@ -22,7 +22,7 @@
 // SOFTWARE.
 ///////////////////////////////////////////////////////////////////////////////////
 
-package fr.auroden.pool;
+package fr.auroden.genericpool;
 
 /**
  * Allocator interface.

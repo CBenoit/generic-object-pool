@@ -22,10 +22,10 @@
 // SOFTWARE.
 ///////////////////////////////////////////////////////////////////////////////////
 
-package fr.auroden.pool.example;
+package fr.auroden.genericpool.example;
 
-import fr.auroden.pool.Allocator;
-import fr.auroden.pool.ObjectPool;
+import fr.auroden.genericpool.Allocator;
+import fr.auroden.genericpool.ObjectPool;
 
 /**
  * Simple ObjectPool example.

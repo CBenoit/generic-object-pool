@@ -22,7 +22,7 @@
 // SOFTWARE.
 ///////////////////////////////////////////////////////////////////////////////////
 
-package fr.auroden.pool;
+package fr.auroden.genericpool;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -49,6 +49,7 @@ public class ObjectPool<K, T> {
     public synchronized T checkOut(K key, Allocator<T> alloc) {
 		if (!this.unlocked.containsKey(key)) {
 			this.unlocked.put(key, new ArrayDeque<>());
+			return alloc.allocate();
 		}
 
 		Deque<T> deq = this.unlocked.get(key);
