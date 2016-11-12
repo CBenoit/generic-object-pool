@@ -56,7 +56,7 @@ public class ObjectPool<K, T> {
 		if (deq.isEmpty()) {
 			return alloc.allocate();
 		}
-		return deq.getFirst();
+		return deq.pop();
     }
 
 	/**
